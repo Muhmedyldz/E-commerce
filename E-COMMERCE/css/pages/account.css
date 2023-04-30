@@ -1,0 +1,99 @@
+.account-page{
+    margin-top: 60px;
+}
+
+.account-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.account-column{
+    display: flex;
+    flex-direction: column;  
+    width: 49%;
+}
+
+.account-title{
+    font-size: 20px !important;
+    font-weight: 500;
+}
+
+.account-form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    margin-top: 10px;
+}
+
+.account-form >div{
+    display: flex;
+    flex-direction: column;
+}
+
+.account-form label{
+    font-size: 14px;
+}
+
+.account-form label span{
+    color: #e51414;
+    font-weight: bold;
+}
+
+.account-form input[type=text]{
+    padding: 8px 8px 8px 15px;
+    margin-top: 5px;
+}
+
+.account-form .remember{
+    display: flex;
+    flex-direction: column;
+}
+
+.account-form .remember label{
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.account-form .remember span{
+    color: black;
+}
+
+.account-form .account-desc{
+    font-size: 12px;
+}
+
+.account-form button{
+    color: white;
+    background-color: #e51414;
+    border: 1px solid #e51414;
+    margin-top: 10px;
+    width: 100px;
+}
+
+.account-form button:hover{
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.account-form a p{
+    font-size: 14px;
+    color: #e51414;
+}
+
+@media (max-width:768px) {
+    .account-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .account-column{
+        width: 100%;
+    }
+
+    .account-column a p{
+        margin-bottom: 40px;
+    }
+}

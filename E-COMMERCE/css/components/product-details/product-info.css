@@ -1,0 +1,193 @@
+.site-main .product-title{
+    font-size: 32px;
+}
+
+.site-main .product-info{
+    width: 50%;
+    padding-left: 15px;
+}
+
+.product-rewiew{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin: 10px 0;
+}
+
+.product-rewiew span{
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.site-main .product-price{
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+.site-main .product-price s{
+    font-size: 18px;
+    color: #dee0ea;
+}
+
+.site-main .product-price strong{
+    font-size: 20px;
+}
+
+.site-main .product-desc{
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 15px 0;
+}
+
+.site-main .colors .colors-label{
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.site-main .colors-wrapper{
+    display: flex;
+    align-items: center;
+    margin-left: -2px;
+    column-gap: 5px;
+}
+
+.site-main .color-wrapper{
+    border: 1px solid transparent;
+    width: 35px;
+    height: 35px;
+    padding: 2px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.site-main .color-wrapper.active{
+    border-color: #e51414;
+}
+
+.site-main .color-wrapper:hover{
+    border-color: #e51414;
+}
+
+.site-main .color-wrapper label{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.site-main .color-wrapper .blue-color{
+    background-color: blue;
+}
+
+.site-main .color-wrapper .red-color{
+    background-color: red;
+}
+
+.site-main .color-wrapper .green-color{
+    background-color: green;
+}
+
+.site-main .color-wrapper .purple-color{
+    background-color: purple;
+}
+
+.site-main .color-wrapper input[type="radio"]{
+    appearance: none;
+}
+
+
+.site-main .values{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin: 10px 0;
+}
+
+.site-main .values .values-label span{
+    display: inline-block;
+   font-size: 14px;
+   font-weight: 500px;
+   margin-bottom: 10px;
+}
+
+.site-main .values .values-list{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.site-main .values .values-list span{
+    display: flex;
+    flex: 1;
+    font-size: 14px;
+    padding: 0 40px;
+    border: 1px solid #dee0ea;
+    cursor: pointer;
+}
+
+.site-main .values .values-list span:hover{
+    background-color: #e51414;
+    color: white;
+}
+
+.site-main .values .values-list span.active {
+    background-color: #e51414;
+    color: white;
+}
+
+.site-main .card-button{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    height: 45px;
+}
+
+.site-main .card-button button:disabled{
+    background-color: #1367ef;
+    color: #fff;
+    border-color: #1367ef;
+}
+
+.site-main .card-button input{
+    width: 80px;
+    height: 100%;
+}
+
+.site-main .card-button button{
+    height: 100%;
+    width: 100%;
+}
+
+.site-main .product-extra-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.site-main .product-extra-buttons a{
+    font-size: 12px;
+    color: gray;
+}
+
+.site-main .divider{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #dee0ea;
+}
+
+.site-main .product-meta{
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+.site-main .product-meta span{
+    color: gray;
+}

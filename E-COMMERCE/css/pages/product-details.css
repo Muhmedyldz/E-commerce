@@ -1,0 +1,30 @@
+
+.single-content{
+    margin: 30px 0;
+}
+/* ! topbar start */
+.single-topbar{
+    margin-top: 30px;
+}
+/* ! topbar end */
+
+/* !responsive  */
+
+@media (max-width:768px) {
+    .site-main{
+        flex-direction: column;
+    }
+
+    .product-gallary,
+    .product-info{
+        width: 100% !important;
+        padding: 0 !important;
+        margin-top: 20px;
+    }
+
+    .values .values-list span{
+        flex: 1;
+        padding: 0 24.3px !important;
+        height: 40px;
+    }
+}

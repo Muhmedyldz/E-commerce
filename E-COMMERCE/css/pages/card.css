@@ -1,0 +1,245 @@
+.cart-page {
+    margin: 30px 0;
+}
+
+.card-page-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ! card form start */
+.card-form {
+    flex-basis: 60%;
+}
+
+/* ? progress start */
+.free-progress-bar {
+    border: 1px solid #dee0ea;
+    padding: 20px;
+    width: 100%;
+}
+
+.progress-bar-title {
+    font-size: 12px;
+}
+
+.progress-bar-title strong {
+    color: #ee403d;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 6px;
+    background-color: #F2F3F5;
+    border-radius: 10px;
+    margin-top: 8px;
+    position: relative;
+}
+
+.progress-bar .progress {
+    background-color: #ee403d;
+    display: inline-block;
+    width: 40%;
+    height: 6px;
+    border-radius: 10px;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* ? progress end */
+
+/* ? table start */
+.shop-scrol{
+    overflow-x: auto;
+}
+
+.card-form table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 30px;
+    font-size: 14px;
+    min-width: 595px;
+}
+
+.card-form table> :not(caption)>*>* {
+    padding: 8px 0;
+}
+
+.card-form table thead {
+    text-align: start;
+    font-size: 14px;
+    font-weight: 600px;
+}
+
+thead .product-title,
+thead .product-price {
+    text-align: start;
+}
+
+.card-wrapper .product-quantity,
+.card-wrapper .product-subtotal {
+    text-align: center !important;
+}
+
+.card-form table tbody {
+    border-top: 1px solid #dee0ea;
+}
+
+.card-form tbody .card-item {
+
+    border-bottom: 1px solid #dee0ea;
+}
+
+.card-form tbody .card-image {
+    position: relative;
+}
+
+.card-form tbody .card-image img {
+    width: 60px;
+}
+
+.card-form tbody .card-image i {
+    position: absolute;
+    top: 2px;
+    left: -6px;
+    background-color: #ee403d;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+/* ? table start */
+
+/* ? actions start */
+.actions-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.actions-wrapper .coupon {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.actions-wrapper .coupon input {
+    height: 100%;
+}
+
+.actions-wrapper .coupon button {
+    background-color: black;
+    color: white;
+}
+
+.actions-wrapper .coupon button:hover {
+    background-color: white;
+    color: black;
+}
+
+.actions-wrapper .update-card button {
+    background-color: #ee403d;
+    color: white;
+    border-color: #ee403d;
+}
+
+.actions-wrapper .update-card button:hover {
+    background-color: white;
+    color: #ee403d;
+    border-color: #ee403d;
+}
+
+/* ? actions end */
+
+/* ? colleterals start */
+.card-colleterals {
+    flex-basis: 300px;
+    border: 1px solid #dee0ea;
+    padding: 30px;
+}
+
+.card-colleterals table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.card-colleterals h2 {
+    font-weight: 500;
+    font-size: 16px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #dee0ea;
+}
+
+.card-colleterals table th,
+.card-colleterals table td {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.card-colleterals table tr:not(:nth-child(3)) {
+    border-bottom: 1px solid #dee0ea;
+}
+
+.card-colleterals table th {
+    text-align: start;
+    padding: 20px 0 10px 0;
+}
+
+.card-colleterals table td {
+    text-align: end;
+}
+
+.card-colleterals table ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.card-colleterals table ul label {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    column-gap: 5px;
+}
+
+.card-colleterals table ul a {
+    color: #ee403d;
+    font-weight: 500;
+}
+
+.card-colleterals .checkout button {
+    margin-top: 30px;
+    background-color: #ee403d;
+    border-color: #ee403d;
+    color: white;
+    width: 100%;
+}
+
+.card-colleterals .checkout button:hover {
+    background-color: white;
+    border-color: #ee403d;
+    color: #ee403d;
+}
+
+/* ? colleterals end */
+
+/* ! card form end */
+
+/* ! responsive start */
+@media (max-width:992px) {
+    .card-page-wrapper{
+        flex-direction: column;
+        row-gap: 30px;
+    }
+}
+/* ! responsive end */

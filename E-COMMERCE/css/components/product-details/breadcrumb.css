@@ -1,0 +1,17 @@
+.single-product .breadcrumb ul{
+    display: flex;
+}
+
+.single-product .breadcrumb ul li{
+    font-size: 12px;
+}
+
+.single-product .breadcrumb ul li:not(:nth-child(4)):after{
+    content: "/";
+    opacity: 0.4;
+    margin: 0 5px;   
+}
+
+.single-product .breadcrumb ul li a:hover{
+    text-decoration: underline;
+}

@@ -1,0 +1,194 @@
+.subscribe-row{
+    background-color: black;
+    color: white;
+    padding: 80px 0;
+}
+
+.footer-row-wrapper{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 200px;
+}
+
+.footer-subscribe-top .subscribe-title,
+.footer-contact-top .contact-title{
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.2;
+    max-width: 500px;
+}
+
+.footer-subscribe-top .subscribe-desc,
+.footer-contact-top .contact-desc{
+    font-size: 14px;
+    opacity: 0.6;
+    margin-top: 4px;
+}
+
+.footer-subscribe-bottom,
+.footer-contact-bottom{
+    margin-top: 40px;
+}
+
+.footer-subscribe-bottom form{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.footer-subscribe-bottom form > input{
+    flex: 1;
+    height: 48px;
+}
+
+.footer-subscribe-bottom form > button{
+    height: 48px;
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+
+.footer-subscribe-bottom form > button:hover{
+    background-color: white;
+    color: black;
+    border-color: white;
+}
+
+.privacy-text{
+    font-size: 10px;
+    opacity: 0.5;
+}
+
+.footer-subscribe-bottom .privacy-text a{
+    color: white;
+    font-size: 10px;
+    margin-top: 4px;
+}
+
+.footer-subscribe-bottom .download-app{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+@media (max-width:768px) {
+    .footer-row-wrapper{
+        flex-direction: column;
+        row-gap: 40px;
+    }
+}
+
+/* ! footer widget start */
+
+.widgets-row{
+    padding: 60px 0px;
+    border-bottom: 1px solid #dee0ea;
+}
+
+.footer-widgets{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.footer-widgets > div{
+    flex: 1;
+}
+
+.footer-widgets .brand-info{
+    flex: 3 !important;
+}
+
+.footer-widgets .footer-logo .logo{
+    font-size: 24px;
+}
+
+.footer-widgets .footer-desc{
+    font-size: 14px;
+    margin: 15px 0;
+    width: 400px;
+}
+
+.footer-widgets .footer-contact{
+    font-size: 14px;
+}
+
+.widget-nav-menu h4 {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.widget-nav-menu .menu-list{
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    margin-top: 20px;
+}
+
+@media (max-width:768px) {
+    .brand-info{
+        margin-bottom: 30px !important;
+    }
+
+    .footer-widgets >div{
+        flex: unset !important;
+    }
+    .footer-widgets .footer-desc{
+        width: 340px ;
+    }
+}
+/* ! footer widget end */
+
+/* ! copyright start */
+.footer-copyright{
+    margin: 40px 0;
+    display: flex;
+    align-items: center;
+}
+
+.site-copyright{
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.copyright-menu{
+    margin-left: auto;
+}
+
+.copyright-menu-list{
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.copyright-menu-item{
+    position: relative;
+    padding-right: 10px;
+}
+
+.copyright-menu-item:not(:last-child):after{
+    content: "";
+    height: 100%;
+    width: 1px;
+    background-color: black;
+    opacity: 0.2;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+@media (max-width:768px) {
+    .footer-copyright{
+        flex-direction: column;
+        text-align: center;
+        row-gap: 10px;
+    }
+
+    .copyright-menu{
+        margin-left: unset;
+    }
+}
+/* ! copyright end */

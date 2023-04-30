@@ -1,0 +1,108 @@
+
+
+.modal-dialog{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s ease;
+}
+
+.modal-dialog.show{
+    visibility: visible !important;
+    opacity: 1;
+}
+
+.modal-dialog:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+}
+
+.modal-content{
+    max-width: 800px;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1;
+    position: fixed;
+    display: flex;
+    align-items: center;
+}
+
+.modal-content .modal-close{
+    position: absolute;
+    right: -40px;
+    top: -40px;
+    background-color: transparent;
+    font-size: 40px;
+}
+
+.modal-content .modal-image img{
+    display: flex;
+}
+
+.modal-content .popup-wrapper{
+    padding: 30px;
+    text-align: center;
+}
+
+.popup-content .popup-title h3{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.popup-content .popup-text{
+    font-size: 14px;
+    color: #7a7a7a;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.popup-content .popup-form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    margin-top: 40px;
+}
+
+.popup-content .popup-form button{
+    height: 42px;
+}
+
+.popup-content .popup-form label{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    font-size: 14px;
+    justify-content: center;
+}
+
+@media (max-width:576px){
+    .modal-content{
+        max-width: 366px;
+    }
+
+    .modal-content .modal-close{
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-color: transparent;
+        font-size: 30px;
+    }
+
+    .modal-content .modal-image{
+        display: none;
+    }
+}
